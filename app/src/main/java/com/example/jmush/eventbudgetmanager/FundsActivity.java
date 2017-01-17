@@ -70,6 +70,8 @@ public class FundsActivity extends AppCompatActivity implements AdapterView.OnIt
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+        
         getMenuInflater().inflate(R.menu.menu_funds, menu);
 
         MenuItem item = menu.findItem(R.id.spinner);
