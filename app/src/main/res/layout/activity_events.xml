@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+
+    </include>
+
+    <fragment
+        android:id="@+id/fragmentAdd"
+        android:name="com.example.jmush.eventbudgetmanager.FragmentAdd"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/fragmentPast"
+        android:name="com.example.jmush.eventbudgetmanager.FragmentPast"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/fragmentUpcoming"
+        android:name="com.example.jmush.eventbudgetmanager.FragmentUpcoming"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/fragmentClose"
+        android:name="com.example.jmush.eventbudgetmanager.FragmentAdd"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+
+</LinearLayout>

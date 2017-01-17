@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jmush.eventbudgetmanager.MainActivity">
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:text="Welcome"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:layout_weight="0.04" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:text="User"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold|italic"
+                android:layout_weight="0.53" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/btn_logut_bg"
+            android:layout_marginTop="10dp"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_events"
+                android:id="@+id/ivEvents"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <Button
+                android:id="@+id/btnEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/btn_event"
+                android:textAllCaps="false"
+                android:textColor="@color/bg_main"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/bg_login"
+            android:gravity="right"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/ivMembers"
+                android:src="@drawable/ic_members"
+                android:layout_width="146dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.13" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <Button
+                android:id="@+id/btnMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/btn_members"
+                android:textAllCaps="false"
+                android:textColor="@color/bg_main"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/btn_logut_bg"
+            android:gravity="right">
+
+            <ImageView
+                android:src="@drawable/ic_funds"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivFunds" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btnFunds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="@string/btn_funds"
+                android:textAllCaps="false"
+                android:textColor="@color/bg_main"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+
+    </include>
+
+</LinearLayout>
